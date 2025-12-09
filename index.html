@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
@@ -22,22 +23,70 @@
     </nav>
 
     <nav id="hamburger-nav">
-         <div class="logo">Rahul R</div>
-         <div class="hamburger-menu">
+        <div class="logo">Rahul R</div>
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
-                 <span></span>
-                  <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
+
             <div class="menu-links">
-                <li><a href="#about" >About Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li> 
+                <li><a href="#contact">Contact</a></li>
             </div>
-         </div>
+        </div>
     </nav>
-    <script src="script.js"></script>
+    <!-- Section -->
+    <section id="profile">
+        <div class="section pic-container">
+            <img src="./assets/Rahul-2.jpg" alt="Rahul R" height="550" width="440" style="border-radius: 120px;">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Rahul R</h1>
+            <p class="section__text__p2">Python Full Stack Intern</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href=('./#contact')">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <!-- LinkedIn Profile -->
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/rahulrangakumar01/'">
+                <!-- Github Profile -->
+                <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                    onclick="location.href='https://github.com/rahulr01'">
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="Profile Pic" class="about-pic" height="450" width="440"
+                    style="border-radius: 120px;">
+            </div>
+        </div>
+        <div class=" about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src=" script.js"></script>
 </body>
+
 </html>
